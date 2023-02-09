@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { GoThreeBars } from "react-icons/go";
 import { MdClose } from "react-icons/md";
 import "./navbar.css";
@@ -39,20 +39,27 @@ const NavBar = () => {
 
   const [toggle, setToggle] = useState(false);
   return (
-    <header>
+    <>
       <Head />
       <nav className="nav">
         <div className="container nav__container">
-          <Link to="/" className="nav__logo">
+          <NavLink to="/" className="nav__logo">
             <img src="/images/owlicon.png" alt="" />
-          </Link>
+          </NavLink>
           <p className="nav__subtext-one">O caminho para o conhecimento</p>
           <p className="nav__subtext-two">Aprender Mais</p>
           <ul className={`nav__links ${toggle ? "show__nav" : "hide__nav"}`}>
             {links.map(({ name, path }, index) => {
               return (
                 <li key={index}>
-                  <NavLink to={path}>{name}</NavLink>
+                  <NavLink
+                    to={path}
+                    className={({ isActive }) =>
+                      isActive ? "active-link" : ""
+                    }
+                  >
+                    {name}
+                  </NavLink>
                 </li>
               );
             })}
@@ -67,7 +74,7 @@ const NavBar = () => {
           </button>
         </div>
       </nav>
-    </header>
+    </>
   );
 };
 
