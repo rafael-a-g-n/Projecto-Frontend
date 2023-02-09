@@ -127,3 +127,49 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  line-height: 1.7;
+  background: linear-gradient(to right, #6a85b6 0%, #bac8e0 100%);
+  min-height: 100vh;
+}
+
+.container {
+  width: 95%;
+  max-width: 1920px;
+  margin-inline: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+a,
+p {
+  color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: 1.2;
+  color: #fff;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
