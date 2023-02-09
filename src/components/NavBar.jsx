@@ -38,6 +38,8 @@ const NavBar = () => {
   ]);
 
   const [toggle, setToggle] = useState(false);
+
+  const toggler = () => setToggle((state) => !state);
   return (
     <>
       <Head />
@@ -57,6 +59,7 @@ const NavBar = () => {
                     className={({ isActive }) =>
                       isActive ? "active-link" : ""
                     }
+                    onClick={toggler}
                   >
                     {name}
                   </NavLink>
@@ -64,12 +67,7 @@ const NavBar = () => {
               );
             })}
           </ul>
-          <button
-            className="nav__toggle-btn"
-            onClick={() => {
-              setToggle(!toggle);
-            }}
-          >
+          <button className="nav__toggle-btn" onClick={toggler}>
             {toggle ? <MdClose /> : <GoThreeBars />}
           </button>
         </div>
