@@ -1,5 +1,4 @@
 .head {
-  width: 100vw;
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
 }
@@ -42,7 +41,7 @@
 }
 
 /* a melhorar espaçamento*/
-@media (max-width: 542px) {
+@media (max-width: 642px) {
   .head__links i {
     margin-bottom: 0.63rem;
   }
@@ -52,8 +51,22 @@
   }
 }
 
-@media (max-width: 435px) {
+@media (max-width: 517px) {
   .head__title p {
     display: none;
+  }
+}
+
+@media (max-width: 345px) {
+  .head__links {
+    display: none;
+  }
+
+  .head__title {
+    width: 100vw;
+  }
+
+  .head__title h1 {
+    text-align: center;
   }
 }

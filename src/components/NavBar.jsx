@@ -29,11 +29,11 @@ const NavBar = () => {
     },
     {
       name: "Noticias",
-      path: "/News",
+      path: "/news",
     },
     {
       name: "Inscrição",
-      path: "/Form",
+      path: "/form",
     },
   ]);
 
@@ -41,7 +41,7 @@ const NavBar = () => {
 
   const toggler = () => setToggle((state) => !state);
   return (
-    <>
+    <div className="fixed">
       <Head />
       <nav className="nav">
         <div className="container nav__container">
@@ -72,7 +72,7 @@ const NavBar = () => {
           </button>
         </div>
       </nav>
-    </>
+    </div>
   );
 };
 

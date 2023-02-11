@@ -4,23 +4,39 @@ import "./head.css";
 
 const Head = () => {
   return (
-    <section className="head">
-      <div className="container head__container">
+    <section className="head container">
+      <div className="head__container">
         <div className="head__title">
           <h1>A Coruja</h1>
           <p>Centro de estudos & preparação</p>
         </div>
         <div className="head__links">
-          <NavLink to="https://www.facebook.com/" target="_blank">
+          <NavLink
+            to="https://www.facebook.com/"
+            aria-label="facebook"
+            target="_blank"
+          >
             <i className="fab fa-facebook-f icon"></i>
           </NavLink>
-          <NavLink to="https://www.instagram.com/" target="_blank">
+          <NavLink
+            to="https://www.instagram.com/"
+            aria-label="instagram"
+            target="_blank"
+          >
             <i className="fab fa-instagram icon"></i>
           </NavLink>
-          <NavLink to="https://twitter.com/" target="_blank">
+          <NavLink
+            to="https://twitter.com/"
+            aria-label="twitter"
+            target="_blank"
+          >
             <i className="fab fa-twitter icon"></i>
           </NavLink>
-          <NavLink to="https://www.youtube.com/" target="_blank">
+          <NavLink
+            to="https://www.youtube.com/"
+            aria-label="youtube"
+            target="_blank"
+          >
             <i className="fab fa-youtube icon"></i>
           </NavLink>
         </div>
