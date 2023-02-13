@@ -1,3 +1,63 @@
 .App {
   max-width: 1920px;
 }
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  line-height: 1.7;
+  background: linear-gradient(to right, #6a85b6 0%, #bac8e0 100%);
+  min-height: 100vh;
+}
+
+.container {
+  width: 80%;
+  max-width: 1920px;
+  margin-inline: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+a,
+p {
+  color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: 1.2;
+  color: #fff;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
+
+.btn {
+  width: fit-content;
+  margin: 0 auto;
+  padding: 0.9rem 2rem;
+  background-color: #313bac;
+  border-radius: 1.5rem;
+  transition: all 500ms ease-in-out;
+}
+
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #313bac;
+}
