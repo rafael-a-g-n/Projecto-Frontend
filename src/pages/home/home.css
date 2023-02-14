@@ -1,11 +1,12 @@
 .main__header {
   width: 100vw;
-  height: 100vh;
+  height: 90vh;
   display: grid;
   place-items: center;
 }
 
 .main__header-container {
+  padding-top: 10rem;
   height: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -37,4 +38,35 @@
 .main__header-right {
   display: grid;
   place-items: center;
+}
+
+/*-------------- services --------------*/
+
+.services {
+  margin-top: 4rem;
+  width: 100vw;
+}
+
+.services__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 3rem;
+  margin-top: 4rem;
+}
+
+.services__service h4 {
+  font-size: 1.35rem;
+  font-weight: 500;
+}
+
+.services__service a {
+  display: flex;
+  margin-top: 2.5rem;
+  align-items: center;
+}
+
+.services__service a:hover {
+  background-color: #f9f6ee;
+  color: #313bac;
+  font-weight: 600;
 }

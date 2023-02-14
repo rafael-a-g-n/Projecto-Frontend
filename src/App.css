@@ -4,7 +4,7 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  color: #fff;
+  color: #f9f6ee;
   line-height: 1.7;
   background: linear-gradient(to right, #6a85b6 0%, #bac8e0 100%);
   min-height: 100vh;
@@ -22,7 +22,7 @@ a {
 
 a,
 p {
-  color: #fff;
+  color: #f9f6ee;
 }
 
 h1,
@@ -31,7 +31,7 @@ h3,
 h4,
 h5 {
   line-height: 1.2;
-  color: #fff;
+  color: #f9f6ee;
 }
 
 h1 {
@@ -50,6 +50,7 @@ img {
 
 .btn {
   width: fit-content;
+  font-weight: 600;
   margin: 0 auto;
   padding: 0.9rem 2rem;
   background-color: #313bac;
@@ -58,6 +59,83 @@ img {
 }
 
 .btn:hover {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: #f9f6ee;
   color: #313bac;
+}
+
+.btn.lg {
+  padding: 1.2rem 3rem;
+  border-radius: 2rem;
+  font-size: 1.1rem;
+}
+
+.btn.sm {
+  padding: 0.4rem 1.2rem;
+  font-size: 0.9rem;
+}
+
+section {
+  margin-top: 5rem;
+}
+
+.section__head {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.section__head span {
+  display: grid;
+  place-items: center;
+  background-color: #313bac;
+  padding: 0.8rem;
+  border-radius: 1rem;
+  color: #f9f6ee;
+  font-size: 1.8rem;
+}
+
+.section__head h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.card {
+  background-color: #7192ba;
+  border: 2px solid #6481a3;
+  text-align: center;
+  padding: 3rem 2rem;
+  border-radius: 0 3rem 0 3rem;
+  transition: all 500ms ease-in-out;
+}
+
+.card:hover {
+  background: rgba(20, 0, 0, 0.1);
+  border-color: #f9f6ee;
+  cursor: default;
+}
+
+.card span {
+  background-color: #313bac;
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  padding: 0.8rem;
+  display: grid;
+  place-items: center;
+  margin-bottom: 1.5rem;
+  margin-inline: auto;
+  border-radius: 1rem;
+  transition: all 500ms ease-in-out;
+}
+
+.card:hover span {
+  background-color: #f9f6ee;
+  color: #313bac;
+}
+
+.card small {
+  margin-top: 1rem;
+  display: block;
+  font-weight: 300;
+  color: #e5e4e2;
 }
