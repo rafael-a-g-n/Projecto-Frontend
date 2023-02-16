@@ -1,3 +1,4 @@
+import FAQs from "../../components/FAQs";
 import MainHeader from "../../components/MainHeader";
 import Services from "../../components/Services";
 import Values from "../../components/Values";
@@ -9,6 +10,7 @@ const Home = () => {
       <MainHeader />
       <Services />
       <Values />
+      <FAQs />
     </>
   );
 };

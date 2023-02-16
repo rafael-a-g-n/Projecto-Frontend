@@ -128,3 +128,48 @@
   position: absolute;
   top: -2.3rem;
 }
+
+/*-------------- FAQs --------------*/
+
+.faqs {
+  width: 100vw;
+}
+
+.faqs__wrapper {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem 3rem;
+  align-items: flex-start;
+}
+
+.faq {
+  background-color: #7192ba;
+  padding: 2rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.faq div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.faq__icon {
+  background: transparent;
+  color: #f9f6ee;
+  font-size: 1.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+.faq h4 {
+  font-size: 1.35rem;
+  font-weight: 500;
+}
+
+.faq p {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
