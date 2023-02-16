@@ -15,6 +15,10 @@
   gap: 6rem;
 }
 
+.main__header-left {
+  margin-top: -3rem;
+}
+
 .main__header-left h3 {
   margin-bottom: 1rem;
   font-size: 2.813rem;
@@ -63,6 +67,7 @@
   display: flex;
   margin-top: 2.5rem;
   align-items: center;
+  justify-content: center;
 }
 
 .services__service a:hover {

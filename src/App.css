@@ -1,11 +1,8 @@
-.App {
-  max-width: 1920px;
-}
-
 body {
   font-family: "Montserrat", sans-serif;
   color: #f9f6ee;
   line-height: 1.7;
+  overflow-x: hidden;
   background: linear-gradient(to right, #6a85b6 0%, #bac8e0 100%);
   min-height: 100vh;
 }
@@ -118,7 +115,7 @@ section {
   background-color: #313bac;
   width: 3rem;
   height: 3rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
   padding: 0.8rem;
   display: grid;
   place-items: center;
@@ -136,6 +133,7 @@ section {
 .card small {
   margin-top: 1rem;
   display: block;
+  font-size: 1.2rem;
   font-weight: 300;
   color: #e5e4e2;
 }

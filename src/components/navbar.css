@@ -1,12 +1,12 @@
 .fixed {
   position: fixed;
+  z-index: 99;
 }
 
 .nav {
   height: 5rem;
   width: 100vw;
   margin-inline: auto;
-  z-index: 99;
 }
 
 .nav__container {
