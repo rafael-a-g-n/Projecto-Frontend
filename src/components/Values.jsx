@@ -1,9 +1,7 @@
 import SectionHead from "./SectionHead";
-import { GiBookAura } from "react-icons/gi";
-import { FaStackExchange } from "react-icons/fa";
-import { FaHandshake } from "react-icons/fa";
+import { GiBookAura, GiPuzzle } from "react-icons/gi";
+import { FaStackExchange, FaHandshake } from "react-icons/fa";
 import { MdOutlineFamilyRestroom } from "react-icons/md";
-import { GiPuzzle } from "react-icons/gi";
 import { useState } from "react";
 import Card from "./Cards/Card";
 

@@ -98,10 +98,11 @@ section {
 
 .card {
   background-color: #7192ba;
-  border: 2px solid #6481a3;
+  border: 2px solid transparent;
   text-align: center;
   padding: 3rem 2rem;
   border-radius: 0 3rem 0 3rem;
+  box-shadow: 0 1.5rem 2rem rgba(26, 26, 54, 0.4);
   transition: all 500ms ease-in-out;
 }
 
@@ -109,6 +110,7 @@ section {
   background: rgba(20, 0, 0, 0.1);
   border-color: #f9f6ee;
   cursor: default;
+  box-shadow: none;
 }
 
 .card span {
