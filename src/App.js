@@ -3,6 +3,7 @@ import Home from "./pages/home/Home";
 import NavBar from "./components/NavBar";
 
 import "./App.css";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Routes>
           <Route index element={<Home />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   );

@@ -15,6 +15,7 @@ const Head = () => {
             to="https://www.facebook.com/"
             aria-label="facebook"
             target="_blank"
+            rel="noreferrer noopener"
           >
             <i className="fab fa-facebook-f icon"></i>
           </NavLink>
@@ -22,6 +23,7 @@ const Head = () => {
             to="https://www.instagram.com/"
             aria-label="instagram"
             target="_blank"
+            rel="noreferrer noopener"
           >
             <i className="fab fa-instagram icon"></i>
           </NavLink>
@@ -29,6 +31,7 @@ const Head = () => {
             to="https://twitter.com/"
             aria-label="twitter"
             target="_blank"
+            rel="noreferrer noopener"
           >
             <i className="fab fa-twitter icon"></i>
           </NavLink>
@@ -36,6 +39,7 @@ const Head = () => {
             to="https://www.youtube.com/"
             aria-label="youtube"
             target="_blank"
+            rel="noreferrer noopener"
           >
             <i className="fab fa-youtube icon"></i>
           </NavLink>
