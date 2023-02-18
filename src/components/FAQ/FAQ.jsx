@@ -1,6 +1,5 @@
 import { useState } from "react";
-import { AiOutlinePlus } from "react-icons/ai";
-import { AiOutlineMinus } from "react-icons/ai";
+import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai";
 
 const FAQ = ({ question, answer }) => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -9,7 +8,11 @@ const FAQ = ({ question, answer }) => {
     <article className="faq" onClick={() => setIsExpanded(!isExpanded)}>
       <div>
         <h4>{question}</h4>
-        <button className="faq__icon">
+        <button
+          className="faq__icon"
+          aria-label={isExpanded ? "fechar" : "expandir"}
+          onClick={() => setIsExpanded(!isExpanded)}
+        >
           {isExpanded ? <AiOutlineMinus /> : <AiOutlinePlus />}
         </button>
       </div>

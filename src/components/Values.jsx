@@ -40,7 +40,10 @@ const Values = () => {
       <div className="container values__container">
         <div className="values__left">
           <div className="values__image">
-            <img src="/images/student.jpeg" alt="cabinet filled with books" />
+            <img
+              src="/images/student.jpeg"
+              alt="jovem a estudar numa secretária"
+            />
           </div>
         </div>
         <div className="values__right">

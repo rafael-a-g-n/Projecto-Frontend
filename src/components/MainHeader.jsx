@@ -13,7 +13,7 @@ const MainHeader = () => {
             Começa já a preparar o teu futuro. Encontram-se abertas as
             inscrições para o ano letivo corrente e 2023/2024
           </p>
-          <NavLink to="/form" className="btn lg">
+          <NavLink aria-label="inscrever" to="/form" className="btn lg">
             Inscrever
           </NavLink>
         </div>

@@ -1,7 +1,6 @@
 import { useState } from "react";
 import SectionHead from "./SectionHead";
 import FAQ from "./FAQ/FAQ";
-
 import { FaQuestion } from "react-icons/fa";
 
 const FAQs = () => {

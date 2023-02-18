@@ -46,7 +46,7 @@ const NavBar = () => {
       <nav className="nav">
         <div className="container nav__container">
           <NavLink to="/" className="nav__logo">
-            <img src="/images/owlicon.png" alt="" />
+            <img src="/images/owlicon.png" alt="a coruja logo" />
           </NavLink>
           <p className="nav__subtext-one">O caminho para o conhecimento</p>
           <p className="nav__subtext-two">Aprender Mais</p>
@@ -68,7 +68,11 @@ const NavBar = () => {
             })}
           </ul>
           <button className="nav__toggle-btn" onClick={toggler}>
-            {toggle ? <MdClose /> : <GoThreeBars />}
+            {toggle ? (
+              <MdClose aria-label="fechar menu" />
+            ) : (
+              <GoThreeBars aria-label="abrir menu" />
+            )}
           </button>
         </div>
       </nav>
