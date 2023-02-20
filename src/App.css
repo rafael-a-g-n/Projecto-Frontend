@@ -31,12 +31,9 @@ h5 {
   color: #f9f6ee;
 }
 
-h1 {
-  font-size: 3rem;
-}
-
 h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
+  font-weight: 500;
 }
 
 img {
@@ -91,11 +88,6 @@ section {
   font-size: 1.8rem;
 }
 
-.section__head h2 {
-  font-size: 2.5rem;
-  font-weight: 500;
-}
-
 .card {
   background-color: #7192ba;
   border: 2px solid transparent;
@@ -138,4 +130,10 @@ section {
   font-size: 1.2rem;
   font-weight: 300;
   color: #e5e4e2;
+}
+
+@media (max-width: 600px) {
+  .section__head h2 {
+    font-size: 2rem;
+  }
 }

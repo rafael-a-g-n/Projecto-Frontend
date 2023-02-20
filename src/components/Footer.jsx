@@ -5,15 +5,15 @@ const Footer = () => {
   return (
     <footer>
       <div className="container footer__container">
-        <div className="article">
+        <div className="footer__article">
           <NavLink to="/" className="logo">
-            <img src="/images/owlicon.png" alt="logo coruja" />
+            <img src="/images/owlicon.png" alt="logótipo coruja" />
           </NavLink>
           <p>
             Os nossos serviços dirigem-se a todos aqueles que pretendem obter
             sucesso educativo, académico, profissional e pessoal através de todo
             o ciclo de constantes melhorias providenciado pelo nosso centro de
-            estudos <strong>A Coruja</strong>.
+            estudos A Coruja.
           </p>
           <div className="footer__socials">
             <NavLink
@@ -50,7 +50,7 @@ const Footer = () => {
             </NavLink>
           </div>
         </div>
-        <div className="article">
+        <div className="footer__article">
           <h4>Navegação</h4>
           <NavLink to="/">Home</NavLink>
           <NavLink to="/about">About</NavLink>
@@ -60,7 +60,7 @@ const Footer = () => {
           <NavLink to="/news">Noticias</NavLink>
           <NavLink to="/form">Inscrição</NavLink>
         </div>
-        <div className="article">
+        <div className="footer__article">
           <h4>Links Externos</h4>
           <NavLink
             to="https://www.blogger.com/"
@@ -91,12 +91,10 @@ const Footer = () => {
             C.M. Setúbal{" "}
           </NavLink>
         </div>
-        <div className="article article__address">
+        <div className="footer__article">
           <h4>Contactos</h4>
           <address>
-            <h5>
-              <strong>A Coruja</strong>
-            </h5>
+            <h5>A Coruja</h5>
 
             <p>
               Rua Dos Aflitos nº43 <br />
