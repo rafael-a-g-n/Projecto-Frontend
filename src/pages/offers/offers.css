@@ -1,0 +1,65 @@
+.offers-subtitle {
+  margin-bottom: 5rem;
+}
+.offers-subtitle h2 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 800;
+  color: #313bac;
+}
+.offers__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3rem;
+}
+
+.offer-image {
+  margin-bottom: 1rem;
+  margin-top: -1rem;
+}
+
+.offer-image img {
+  border-top-right-radius: 3rem;
+  box-shadow: 0 1.5rem 2rem rgba(26, 26, 54, 0.4);
+}
+
+.offer h4 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.offer h5 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 0.8rem;
+}
+
+.offer p {
+  margin-top: 1rem;
+}
+
+/* Queries (ecrãs médios)*/
+
+@media (max-width: 1024px) {
+  .offers__container {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .offer h4 {
+    font-size: 1.6rem;
+  }
+
+  .offer h5 {
+    font-size: 1.4rem;
+  }
+}
+
+/* Queries (ecrãs pequenos)*/
+
+@media (max-width: 600px) {
+  .offers__container {
+    grid-template-columns: 1fr;
+  }
+}
