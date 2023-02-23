@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import About from "./pages/about/About";
 import Offers from "./pages/offers/Offers";
 import Team from "./pages/team/Team";
+import Partnerships from "./pages/partnerships/Partnerships";
 import "./App.css";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route path="about" element={<About />} />
           <Route path="offers" element={<Offers />} />
           <Route path="team" element={<Team />} />
+          <Route path="partnerships" element={<Partnerships />} />
         </Routes>
         <Footer />
       </BrowserRouter>

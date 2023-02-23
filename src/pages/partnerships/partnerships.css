@@ -1,0 +1,115 @@
+.partners-subtitle {
+  margin-bottom: 5rem;
+}
+
+.partners-subtitle h2 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 800;
+  color: #313bac;
+}
+
+.partners__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 4rem;
+}
+
+.card.partner {
+  padding: 1rem;
+  position: relative;
+}
+
+.partner__img {
+  border-radius: 0 2rem;
+  overflow: hidden;
+  box-shadow: 0 1.5rem 2rem rgba(26, 26, 54, 0.4);
+  transition: all 500ms ease-in-out;
+}
+
+.partner:hover .partner__img {
+  box-shadow: none;
+}
+
+.partner h4 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-top: 2rem;
+}
+
+.partner small {
+  font-size: 0.8rem;
+}
+
+.partner p {
+  margin-top: 0.5rem;
+}
+
+.partner p {
+  margin-top: 0.5rem;
+  padding-bottom: 5rem;
+}
+
+.partner__link {
+  margin: 2rem 0;
+  position: absolute;
+  bottom: 0;
+  left: 46%;
+}
+
+.partner__link a {
+  display: grid;
+  place-items: center;
+  font-size: 0.7rem;
+  color: #f9f6ee;
+  background-color: #313bac;
+  padding: 0.7rem;
+  border-radius: 50%;
+  box-shadow: 0 1.5rem 2rem rgba(26, 26, 54, 0.4);
+  transition: all 500ms ease-in-out;
+}
+
+.partner__link svg {
+  font-size: 1.5rem;
+}
+
+.partner__link a:hover {
+  color: #313bac;
+  background-color: #f9f6ee;
+  box-shadow: none;
+}
+
+/* Queries (ecrãs médios)*/
+
+@media (max-width: 1024px) {
+  .partners__container {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+
+  .partners-subtitle h2 {
+    font-size: 2.5rem;
+  }
+
+  .partner h4 {
+    font-size: 1.6rem;
+  }
+}
+
+/* Queries (ecrãs pequenos)*/
+
+@media (max-width: 600px) {
+  .partners__container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .partners-subtitle {
+    margin-bottom: 2.5rem;
+  }
+
+  .card.partner {
+    width: 90%;
+    margin-inline: auto;
+  }
+}
