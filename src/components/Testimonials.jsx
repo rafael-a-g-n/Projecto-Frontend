@@ -1,51 +1,21 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import SectionHead from "./SectionHead";
 import Card from "./Cards/Card";
 import { ImQuotesLeft } from "react-icons/im";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 
 const Testimonials = () => {
-  const [testimonials] = useState([
-    {
-      name: "Leonor Teles",
-      quote:
-        "A Coruja, um centro de estudos de excelência com nota 5. Tem excelentes instalações, excelentes profissionais, excelente ambiente. Só tenho bem a dizer nestes 3 anos que o meu filho a frequenta. Recomendo vivamente!!",
-      occupation: "Mãe",
-      avatar: "/images/avatar1.jpg",
-    },
-    {
-      name: "Luis Vinhais",
-      quote:
-        "Eles fazem um acompanhamento que nunca tinha visto em qualquer outro centro de estudos. Os professores são simpáticos e acompanham de perto a evolução dos alunos. Recomendo 10/10...",
-      occupation: "Estudante 12º ano",
-      avatar: "/images/avatar2.jpg",
-    },
-    {
-      name: "Bruno Costa",
-      quote:
-        "Foram uma peça fundamental no meu estudo para os Exames Nacionais...",
-      occupation: "Estudante 12º ano",
-      avatar: "/images/avatar3.jpg",
-    },
-    {
-      name: "Joana Ponga",
-      quote:
-        "São excelentes profissionais e conseguem explicar de forma descomplicada...",
-      occupation: "Estudante 11º ano",
-      avatar: "/images/avatar4.jpg",
-    },
-    {
-      name: "Madalena Silva",
-      quote:
-        "Ajudam-me imenso não só a compreender e a reavivar as matérias mas também a manter o foco...",
-      occupation: "Estudante 11º ano",
-      avatar: "/images/avatar5.jpg",
-    },
-  ]);
+  const [testimonials, setTestimonials] = useState();
+
+  useEffect(() => {
+    fetch("/api/testimonials.json")
+      .then((response) => response.json())
+      .then((data) => {
+        setTestimonials(data);
+      });
+  }, []);
 
   const [index, setIndex] = useState(0);
-
-  const { name, quote, occupation, avatar } = testimonials[index];
 
   const prevTestimonial = () => {
     setIndex(() => index - 1);
@@ -61,6 +31,8 @@ const Testimonials = () => {
     }
   };
 
+  if (testimonials === undefined) return null;
+
   return (
     <section className="testimonials">
       <div className="container testimonials__container">
@@ -71,13 +43,18 @@ const Testimonials = () => {
         />
         <Card className="testimonial">
           <div className="testimonial__avatar">
-            <img src={avatar} alt={name} />
+            <img
+              src={testimonials[index].avatar}
+              alt={testimonials[index].name}
+            />
           </div>
           <blockquote>
-            <p className="testimonial__quote">{`"${quote}"`}</p>
+            <p className="testimonial__quote">{`"${testimonials[index].quote}"`}</p>
           </blockquote>
-          <h5>{name}</h5>
-          <small className="testimonial__title">{occupation}</small>
+          <h5>{testimonials[index].name}</h5>
+          <small className="testimonial__title">
+            {testimonials[index].occupation}
+          </small>
         </Card>
         <div className="testimonials__btn-container">
           <button

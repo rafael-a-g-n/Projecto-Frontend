@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "question": "As explicações são presenciais ou remotas?",
+    "answer": "O Centro de Estudos, A Coruja, oferece explicações em ambos os formatos. Para estudantes do \"Ensino Básico\", tanto as atividades de estudo acompanhado como as de explicações são exclusivamente presenciais. Estudantes do Ensino Secundário ou Superior podem optar por explicações tanto presenciais como remotas."
+  },
+  {
+    "id": 2,
+    "question": "As explicações são individuais ou em grupo?",
+    "answer": "Os dois formatos são possíveis de serem contratados. Explicações em grupo precisam ter entre três e cinco pessoas e são mais baratas. Caso o aluno tenha interesse é só entrar em contacto connosco para saber todos os detalhes."
+  },
+  {
+    "id": 3,
+    "question": "Existe algum material de suporte fornecido para os alunos?",
+    "answer": "Sim. As explicações são acompanhadas de indicações bibliográficas e  orientações personalizadas para cada aluno. Ao final de cada encontro com o professor, o aluno recebe uma orientação de bibliografias da área estudada, um guia personalizado de atividades a serem feitas em casa (sem o acompanhamento do professor) e, caso haja necessidade, resumos e fichas de exercícios para melhor reter o conteúdo."
+  },
+  {
+    "id": 4,
+    "question": "O Professor auxilia alunos em exames ou provas?",
+    "answer": "Não. Quaisquer métodos avaliativos devem ser feitos exclusivamente pelos alunos. Cabe ao professor preparar devidamente os alunos para que tenham bons rendimentos escolares e académicos. No momento da avaliação, o aluno deverá estar o mais concentrado possível (sem interferências externas) para conseguir resolver a atividade proposta com o máximo de aproveitamento."
+  },
+  {
+    "id": 5,
+    "question": "O professor auxilia na elaboração e conclusão de trabalhos escolares?",
+    "answer": "Sim. Um dos nossos principais serviços (já incluído na metodologia de explicações) é o apoio ao aluno em suas atividades regulares. Caso o aluno precise de auxílio na elaboração de um trabalho escolar, esse será devidamente orientado pelo professor."
+  },
+  {
+    "id": 6,
+    "question": "O professor possui alguma rede social para que eu possa acompanhar a divulgação de conteúdos, dicas e material de suporte online?",
+    "answer": "Sim. Temos diferentes redes sociais onde postamos regularmente conteúdo para pais e alunos."
+  }
+]

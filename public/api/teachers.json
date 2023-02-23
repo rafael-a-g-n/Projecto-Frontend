@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1,
+    "image": "/images/teacher1.jpg",
+    "name": "Luis Dantas",
+    "discipline": "Historia / Português / Filosofia",
+    "socials": [
+      {
+        "social_name": "instagram",
+        "link": "https://instagram.com"
+      },
+      {
+        "social_name": "twitter",
+        "link": "https://twitter.com"
+      },
+      {
+        "social_name": "facebook",
+        "link": "https://facebook.com/"
+      },
+      {
+        "social_name": "instagram",
+        "link": "https://linkedin.com/"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "image": "/images/teacher2.jpg",
+    "name": "Sofia Pratas",
+    "discipline": "1º Ciclo",
+    "socials": [
+      {
+        "social_name": "instagram",
+        "link": "https://instagram.com"
+      },
+      {
+        "social_name": "twitter",
+        "link": "https://twitter.com"
+      },
+      {
+        "social_name": "facebook",
+        "link": "https://facebook.com/"
+      },
+      {
+        "social_name": "instagram",
+        "link": "https://linkedin.com/"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "image": "/images/teacher3.jpg",
+    "name": "João Moreira",
+    "discipline": "Matemática / Geometria",
+    "socials": [
+      {
+        "social_name": "instagram",
+        "link": "https://instagram.com"
+      },
+      {
+        "social_name": "twitter",
+        "link": "https://twitter.com"
+      },
+      {
+        "social_name": "facebook",
+        "link": "https://facebook.com/"
+      },
+      {
+        "social_name": "instagram",
+        "link": "https://linkedin.com/"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "image": "/images/teacher4.jpg",
+    "name": "Mariana Vargas",
+    "discipline": "Inglês / Francês",
+    "socials": [
+      {
+        "social_name": "instagram",
+        "link": "https://instagram.com"
+      },
+      {
+        "social_name": "twitter",
+        "link": "https://twitter.com"
+      },
+      {
+        "social_name": "facebook",
+        "link": "https://facebook.com/"
+      },
+      {
+        "social_name": "instagram",
+        "link": "https://linkedin.com/"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "image": "/images/teacher5.jpg",
+    "name": "Manuel Casaca",
+    "discipline": "Ciências / Física / Química / Biologia",
+    "socials": [
+      {
+        "social_name": "instagram",
+        "link": "https://instagram.com"
+      },
+      {
+        "social_name": "twitter",
+        "link": "https://twitter.com"
+      },
+      {
+        "social_name": "facebook",
+        "link": "https://facebook.com/"
+      },
+      {
+        "social_name": "instagram",
+        "link": "https://linkedin.com/"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "image": "/images/teacher6.jpg",
+    "name": "Margarida Sousa",
+    "discipline": "Geografia / Geologia",
+    "socials": [
+      {
+        "social_name": "instagram",
+        "link": "https://instagram.com"
+      },
+      {
+        "social_name": "twitter",
+        "link": "https://twitter.com"
+      },
+      {
+        "social_name": "facebook",
+        "link": "https://facebook.com/"
+      },
+      {
+        "social_name": "instagram",
+        "link": "https://linkedin.com/"
+      }
+    ]
+  }
+]

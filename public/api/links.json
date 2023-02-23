@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Home",
+    "path": "/"
+  },
+  {
+    "name": "Sobre",
+    "path": "/about"
+  },
+  {
+    "name": "Serviços",
+    "path": "/offers"
+  },
+  {
+    "name": "Equipa",
+    "path": "/team"
+  },
+  {
+    "name": "Parcerias",
+    "path": "/partnerships"
+  },
+  {
+    "name": "Noticias",
+    "path": "/news"
+  },
+  {
+    "name": "Inscrição",
+    "path": "/form"
+  }
+]

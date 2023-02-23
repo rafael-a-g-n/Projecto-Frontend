@@ -1,0 +1,54 @@
+[
+  {
+    "id": 1,
+    "image": "/images/partner1.jpg",
+    "name": "Happy Bus",
+    "type": "Transporte",
+    "description": "A Happy Bus é uma empresa de serviço personalizado de transporte coletivo, orientada para o transporte de alunos. Também efetua outros serviços de transporte personalizado.",
+    "link": "http://www.happybus.com.pt/"
+  },
+
+  {
+    "id": 2,
+    "image": "/images/partner2.jpg",
+    "name": "Consulped",
+    "type": "Psicologia",
+    "description": "Entre vários serviços , a Consulped oferece acompanhamento especializado no desenvolvimento do adolescente. Desde terapias inovadoras, psicologia educacional orientação escolar e profissional",
+    "link": "https://www.consulped.pt/psicologia.html"
+  },
+
+  {
+    "id": 3,
+    "image": "/images/partner3.jpg",
+    "name": "O Canto da Psicologia",
+    "type": "Psicologia",
+    "description": "O espaço terapêutico Canto da Psicologia atua de maneira primorosa, em atendimentos que visam sempre o bem-estar de cada cliente. Atua no acompanhamento psicológico de adultos, crianças, adolescentes e jovens, em situação de sofrimento, que possuem algum tipo de perturbação comportamental, ou que estão com dificuldades no campo emocional.",
+    "link": "https://www.canto-psicologia.com/epages/3425-150928.sf/pt_PT/?ObjectPath=/Shops/3425-150928/Categories/PsicologianaAdolescencia"
+  },
+
+  {
+    "id": 4,
+    "image": "/images/partner4.jpg",
+    "name": "Aquarius",
+    "type": "Alimentação",
+    "description": "Contamos com um serviço de refeições saudáveis confecionadas no próprio dia, para que não falte os nutrientes essenciais ao desenvolvimento do adolescente. 0% de açúcar 100% de dedicação.  ",
+    "link": "https://www.aquarius.com.pt/refeicoes.html"
+  },
+
+  {
+    "id": 5,
+    "image": "/images/partner5.jpg",
+    "name": "Ticket Ensino",
+    "type": "Pagamentos",
+    "description": "O Ticket Ensino® permite às empresas e instituições subsidiar as despesas de educação e formação dos colaboradores e seus dependentes em áreas diversas, sem limite de idade ou valor anual. Utilizável para pagamento mensalidades do Centro de Estudos, compra de manuais, livros e material escolar.",
+    "link": "https://ticket.pt/tickets/ticket-ensino"
+  },
+  {
+    "id": 6,
+    "image": "/images/partner6.jpg",
+    "name": "Ticket Educação",
+    "type": "Pagamentos",
+    "description": "O Ticket Educação® é um título em vale, cartão eletrónico e formato digital, totalmente desmaterializado, atribuído pelas empresas e instituições aos seus colaboradores para compensação de encargos familiares com a educação. Utilizável para pagamento mensalidades do Centro de Estudos.",
+    "link": "https://ticket.pt/tickets/ticket-educacao"
+  }
+]

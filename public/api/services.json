@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Primeiro Ciclo",
+    "info": "Acompanhamento na primeira etapa escolar até ao quarto ano",
+    "path": "/offers"
+  },
+  {
+    "id": 2,
+    "title": "Segundo e Terceiro Ciclo",
+    "info": "Todo o percurso e aconselhamento para a definição do Secundário ",
+    "path": "/offers"
+  },
+  {
+    "id": 3,
+    "title": "Ensino Secundário",
+    "info": "Acompanhamento e preparação para a vida académica",
+    "path": "/offers"
+  },
+  {
+    "id": 4,
+    "title": "Programa RVCC",
+    "info": "Reconhecimento, Validação e Certificação de competências adquiridas",
+    "path": "/offers"
+  }
+]

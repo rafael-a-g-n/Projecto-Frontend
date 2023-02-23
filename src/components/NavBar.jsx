@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { GoThreeBars } from "react-icons/go";
 import { MdClose } from "react-icons/md";
@@ -6,40 +6,20 @@ import "./navbar.css";
 import Head from "./Head";
 
 const NavBar = () => {
-  const [links] = useState([
-    {
-      name: "Home",
-      path: "/",
-    },
-    {
-      name: "Sobre",
-      path: "/about",
-    },
-    {
-      name: "Serviços",
-      path: "/offers",
-    },
-    {
-      name: "Equipa",
-      path: "/team",
-    },
-    {
-      name: "Parcerias",
-      path: "/partnerships",
-    },
-    {
-      name: "Noticias",
-      path: "/news",
-    },
-    {
-      name: "Inscrição",
-      path: "/form",
-    },
-  ]);
+  const [links, setLinks] = useState();
+
+  useEffect(() => {
+    fetch("/api/links.json")
+      .then((response) => response.json())
+      .then((data) => setLinks(data));
+  }, []);
 
   const [toggle, setToggle] = useState(false);
 
   const toggler = () => setToggle((state) => !state);
+
+  if (links === undefined) return null;
+
   return (
     <div className="fixed">
       <Head />

@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "title": "Respeito",
+    "desc": "Respeitamos a individualidade de cada aluno, os seus sonhos e os seus limites. Só assim podemos ajudá-la a desenvolver todo o seu potencial"
+  },
+  {
+    "id": 2,
+    "title": "Autonomia",
+    "desc": "Respondemos às necessidades dos nossos alunos e damos-lhes ferramentas para que se tornem autónomos, capazes de resolver e responder a desafios com confiança e vontade de aprender"
+  },
+  {
+    "id": 3,
+    "title": "Colaboração",
+    "desc": "Não há dois indivíduos iguais! O nosso trabalho é construido no dia a dia com base no diálogo e colaboração com a família e a escola"
+  },
+  {
+    "id": 4,
+    "title": "Ambiente Familiar",
+    "desc": "Os nossos alunos consideram-nos parte da familia. Por isso, o nosso trabalho gira em torno de 3 eixos e de uma boa comunicação entre eles : A Coruja - Familia - Escola"
+  }
+]
