@@ -4,7 +4,7 @@ import Partner from "../../components/Partners/Partner";
 import "./partnerships.css";
 
 const Partnerships = () => {
-  const [partners, setPartners] = useState();
+  const [partners, setPartners] = useState([]);
 
   useEffect(() => {
     fetch("/api/partners.json")

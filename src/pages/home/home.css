@@ -516,3 +516,13 @@ footer {
     place-items: center;
   }
 }
+
+@media (max-width: 375px) {
+  .main__header-container {
+    padding-top: 12rem;
+  }
+
+  .services__container {
+    padding-top: 5rem;
+  }
+}

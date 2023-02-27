@@ -1,0 +1,154 @@
+.form-subtitle {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.form-subtitle h2 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 800;
+  color: #313bac;
+}
+
+.form__container {
+  display: grid;
+  grid-template-columns: 42% 50%;
+  gap: 8%;
+}
+
+.form__image {
+  filter: saturate(0.25);
+  transition: all 500ms ease-in-out;
+}
+
+.form__image img {
+  object-fit: contain;
+  box-shadow: 0 1.5rem 2rem rgba(26, 26, 54, 0.4);
+  border-radius: 1rem;
+  transition: all 500ms ease-in-out;
+}
+
+.form__image:hover {
+  filter: saturate(0.7);
+}
+
+.form__image img:hover {
+  box-shadow: none;
+}
+
+.card.form__form {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  border: none;
+  transition: none;
+  border-radius: 1.5rem;
+}
+
+.card.form__form:hover {
+  background: #7192ba;
+  box-shadow: 0 1.5rem 2rem rgba(26, 26, 54, 0.4);
+}
+
+.form .form-box {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+label {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+input {
+  height: 50px;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  color: #707070;
+  margin-top: 8px;
+  border: 1px solid #250786;
+  border-radius: 6px;
+  padding: 0 15px;
+}
+
+.form .form-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+}
+
+.form-success {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55px;
+  width: 100%;
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-top: 2rem;
+  transition: all 0.2s ease;
+  background-color: #5cb85c;
+  border-radius: 6px;
+}
+
+.form-success p {
+  color: #f9f6ee !important;
+}
+
+.form button {
+  height: 55px;
+  width: 100%;
+  color: #f9f6ee;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: 2rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background-color: #313bac;
+  border-radius: 6px;
+}
+.form button:hover {
+  background-color: #f9f6ee;
+  color: #313bac;
+}
+
+.form p {
+  color: #990202;
+  font-weight: 500;
+}
+
+@media (max-width: 1024px) {
+  .form__container {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    gap: 4rem;
+  }
+
+  .form-subtitle {
+    margin-top: 2.5rem;
+    margin-bottom: -2rem;
+  }
+
+  .form-subtitle h2 {
+    font-size: 2.5rem;
+  }
+
+  .form__image {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .form .form-column {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  ::placeholder {
+    text-align: center;
+  }
+}
