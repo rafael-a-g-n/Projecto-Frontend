@@ -21,7 +21,7 @@ const Offers = () => {
       </Header>
       <section className="offers">
         <div className="offers-subtitle">
-          <h2> Apoio Escolar</h2>
+          <h3> Apoio Escolar</h3>
         </div>
         <div className="container offers__container">
           {offers.map(({ id, name, img, desc, features }) => {
@@ -31,9 +31,13 @@ const Offers = () => {
                   <img src={img} alt={name} />
                 </div>
                 <h4>{name}</h4>
-                <h5>{desc}</h5>
+                <p className="offer-desc">{desc}</p>
                 {features.map(({ feature }, index) => {
-                  return <p key={index}>{feature}</p>;
+                  return (
+                    <p className="offer-feature" key={index}>
+                      {feature}
+                    </p>
+                  );
                 })}
               </Card>
             );
