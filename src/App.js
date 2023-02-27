@@ -7,14 +7,16 @@ import Offers from "./pages/offers/Offers";
 import Team from "./pages/team/Team";
 import Partnerships from "./pages/partnerships/Partnerships";
 import "./App.css";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
+        <ScrollToTop />
         <NavBar />
         <Routes>
-          <Route index element={<Home />} />
+          <Route index path="/" element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="offers" element={<Offers />} />
           <Route path="team" element={<Team />} />
