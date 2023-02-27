@@ -17,7 +17,7 @@ const About = () => {
             />
           </div>
           <div className="about__section-content">
-            <h2>A Nossa História</h2>
+            <h3>A Nossa História</h3>
             <p>
               Fundado em 1990 na freguesia de São Sebastião em Setúbal, A Coruja
               conta com 3 décadas ao serviço do ensino.
@@ -35,7 +35,7 @@ const About = () => {
       <section className="about__vision">
         <div className="container about__vision-container">
           <div className="about__section-content">
-            <h2>A Nossa Visão</h2>
+            <h3>A Nossa Visão</h3>
             <p>
               Acreditamos que o sucesso profissional e pessoal de cada indivíduo
               advém de uma educação cuidada e acompanhada, de modo a que o aluno
@@ -66,7 +66,7 @@ const About = () => {
             />
           </div>
           <div className="about__section-content">
-            <h2>A Nossa Missão</h2>
+            <h3>A Nossa Missão</h3>
             <p>
               Pretendemos promover o desenvolvimento humano através da educação
               e formação com recurso a métodos sócio construtivos e técnicas
