@@ -220,9 +220,7 @@ const Form = () => {
               </div>
               {Object.keys(formErrors).length === 0 && isSubmit ? (
                 <div className="form-success">
-                  <p>
-                    Formulário enviado, irá ser contactado dentro de 48h úteis
-                  </p>
+                  <p>Formulário enviado</p>
                 </div>
               ) : (
                 <button type="submit">Enviar</button>

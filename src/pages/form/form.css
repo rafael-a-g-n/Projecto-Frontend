@@ -79,16 +79,12 @@ input {
   gap: 5rem;
 }
 
-.form-success {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.form-success p {
   height: 55px;
   width: 100%;
-  font-size: 1.3rem;
-  font-weight: 500;
+  font-size: 2rem !important;
+  font-weight: 500 !important;
   margin-top: 2rem;
-  transition: all 0.2s ease;
   background-color: #5cb85c;
   border-radius: 6px;
 }
@@ -142,6 +138,12 @@ input {
     display: grid;
     grid-template-columns: 1fr;
     gap: 0;
+  }
+
+  .form-success p {
+    padding-top: 1rem;
+    font-size: 1.5rem !important;
+    font-weight: 500 !important;
   }
 
   ::placeholder {
