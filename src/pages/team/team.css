@@ -1,7 +1,7 @@
 .teachers-subtitle {
   margin-bottom: 5rem;
 }
-.teachers-subtitle h2 {
+.teachers-subtitle h3 {
   text-align: center;
   font-size: 3rem;
   font-weight: 800;
@@ -73,7 +73,7 @@
     gap: 2.5rem;
   }
 
-  .teachers-subtitle h2 {
+  .teachers-subtitle h3 {
     font-size: 2.5rem;
   }
 

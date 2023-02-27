@@ -24,7 +24,7 @@ const Team = () => {
       </Header>
       <section className="teachers">
         <div className="teachers-subtitle">
-          <h2>Os Nossos Professores</h2>
+          <h3>Os Nossos Professores</h3>
         </div>
         <div className="container teachers__container">
           {teachers.map(({ id, image, name, discipline, socials }) => {
