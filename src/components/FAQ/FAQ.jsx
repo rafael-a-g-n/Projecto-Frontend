@@ -7,7 +7,7 @@ const FAQ = ({ question, answer }) => {
   return (
     <article className="faq" onClick={() => setIsExpanded(!isExpanded)}>
       <div>
-        <h4>{question}</h4>
+        <h3>{question}</h3>
         <button
           className="faq__icon"
           aria-label={isExpanded ? "fechar" : "expandir"}

@@ -51,7 +51,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer__article">
-          <h4>Navegação</h4>
+          <h3>Navegação</h3>
           <NavLink to="/">Home</NavLink>
           <NavLink to="/about">About</NavLink>
           <NavLink to="/offers">Serviços</NavLink>
@@ -61,7 +61,7 @@ const Footer = () => {
           <NavLink to="/form">Inscrição</NavLink>
         </div>
         <div className="footer__article">
-          <h4>Links Externos</h4>
+          <h3>Links Externos</h3>
           <NavLink
             to="https://www.blogger.com/"
             rel="noreferrer noopener"
@@ -92,9 +92,9 @@ const Footer = () => {
           </NavLink>
         </div>
         <div className="footer__article">
-          <h4>Contactos</h4>
+          <h3>Contactos</h3>
           <address>
-            <h5>A Coruja</h5>
+            <p className="footer__article-name">A Coruja</p>
 
             <p>
               Rua Dos Aflitos nº43 <br />
@@ -110,7 +110,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer__copyright">
-        <small>2023 RAGN &copy; All Rights Reserved</small>
+        <p>2023 RAGN &copy; All Rights Reserved</p>
       </div>
     </footer>
   );

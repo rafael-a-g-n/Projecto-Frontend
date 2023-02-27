@@ -51,7 +51,7 @@ const Testimonials = () => {
               <blockquote>
                 <p className="testimonial__quote">{`"${testimonials[index].quote}"`}</p>
               </blockquote>
-              <h5>{testimonials[index].name}</h5>
+              <p className="testimonial__name">{testimonials[index].name}</p>
               <small className="testimonial__title">
                 {testimonials[index].occupation}
               </small>

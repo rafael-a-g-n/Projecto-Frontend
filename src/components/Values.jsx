@@ -46,8 +46,8 @@ const Values = () => {
                       <MdOutlineFamilyRestroom />
                     ) : null}
                   </span>
-                  <h4>{title}</h4>
-                  <small>{desc}</small>
+                  <h3>{title}</h3>
+                  <p>{desc}</p>
                 </Card>
               );
             })}

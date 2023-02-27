@@ -5,10 +5,10 @@ const MainHeader = () => {
     <header className="main__header">
       <div className="container main__header-container">
         <div className="main__header-left">
-          <h3>Pré-Inscrições Abertas!</h3>
-          <h4>
+          <h2>Pré-Inscrições Abertas!</h2>
+          <p className="main__header-subtitle">
             Explicações <span>|</span> Apoio ao estudo <span>|</span> Online
-          </h4>
+          </p>
           <p>
             Começa já a preparar o teu futuro. Encontram-se abertas as
             inscrições para o ano letivo corrente e 2023/2024

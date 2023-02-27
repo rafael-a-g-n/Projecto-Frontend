@@ -26,9 +26,9 @@ const Services = () => {
                 <span>
                   <ImBook />
                 </span>
-                <h4>{title}</h4>
-                <small>{info}</small>
-                <NavLink to={path} className="btn sm">
+                <h3>{title}</h3>
+                <p>{info}</p>
+                <NavLink aria-label="saber mais" to={path} className="btn sm">
                   Saber Mais <AiFillCaretRight />
                 </NavLink>
               </Card>
