@@ -7,15 +7,13 @@ import Card from "../components/Cards/Card";
 import SectionHead from "./SectionHead";
 
 const Services = () => {
-  const [services, setServices] = useState();
+  const [services, setServices] = useState([]);
 
   useEffect(() => {
     fetch("/api/services.json")
       .then((response) => response.json())
       .then((data) => setServices(data));
   }, []);
-
-  if (services === undefined) return null;
 
   return (
     <section className="services">

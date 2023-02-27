@@ -4,15 +4,13 @@ import FAQ from "./FAQ/FAQ";
 import { FaQuestion } from "react-icons/fa";
 
 const FAQs = () => {
-  const [faqs, setFaqs] = useState();
+  const [faqs, setFaqs] = useState([]);
 
   useEffect(() => {
     fetch("/api/faqs.json")
       .then((response) => response.json())
       .then((data) => setFaqs(data));
   }, []);
-
-  if (faqs === undefined) return null;
 
   return (
     <section className="faqs">

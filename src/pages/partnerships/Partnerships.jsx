@@ -12,8 +12,6 @@ const Partnerships = () => {
       .then((data) => setPartners(data));
   }, []);
 
-  if (partners === undefined) return null;
-
   return (
     <div className="master_wrapper">
       <Header title="Parcerias" image="/images/header_bg_4.jpg">

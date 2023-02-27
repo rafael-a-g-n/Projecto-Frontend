@@ -6,15 +6,13 @@ import { MdOutlineFamilyRestroom } from "react-icons/md";
 import Card from "./Cards/Card";
 
 const Values = () => {
-  const [values, setValues] = useState();
+  const [values, setValues] = useState([]);
 
   useEffect(() => {
     fetch("/api/values.json")
       .then((response) => response.json())
       .then((data) => setValues(data));
   }, []);
-
-  if (values === undefined) return null;
 
   return (
     <section className="values">
@@ -34,7 +32,7 @@ const Values = () => {
             desenvolvimento dos alunos e dos nossos profissionais.
           </p>
           <div className="values__wrapper">
-            {values.map(({ id, icon, title, desc }) => {
+            {values.map(({ id, title, desc }) => {
               return (
                 <Card key={id} className="values__value">
                   <span>

@@ -5,7 +5,7 @@ import { ImQuotesLeft } from "react-icons/im";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 
 const Testimonials = () => {
-  const [testimonials, setTestimonials] = useState();
+  const [testimonials, setTestimonials] = useState([]);
 
   useEffect(() => {
     fetch("/api/testimonials.json")
@@ -31,51 +31,53 @@ const Testimonials = () => {
     }
   };
 
-  if (testimonials === undefined) return null;
-
   return (
-    <section className="testimonials">
-      <div className="container testimonials__container">
-        <SectionHead
-          icon={<ImQuotesLeft />}
-          title="Testemunhos"
-          className="testimonials__head"
-        />
-        <Card className="testimonial">
-          <div className="testimonial__avatar">
-            <img
-              src={testimonials[index].avatar}
-              alt={testimonials[index].name}
+    <>
+      {testimonials && testimonials.length && (
+        <section className="testimonials">
+          <div className="container testimonials__container">
+            <SectionHead
+              icon={<ImQuotesLeft />}
+              title="Testemunhos"
+              className="testimonials__head"
             />
+            <Card className="testimonial">
+              <div className="testimonial__avatar">
+                <img
+                  src={testimonials[index].avatar}
+                  alt={testimonials[index].name}
+                />
+              </div>
+              <blockquote>
+                <p className="testimonial__quote">{`"${testimonials[index].quote}"`}</p>
+              </blockquote>
+              <h5>{testimonials[index].name}</h5>
+              <small className="testimonial__title">
+                {testimonials[index].occupation}
+              </small>
+            </Card>
+            <div className="testimonials__btn-container">
+              <button
+                type="button"
+                className="testimonials__btn"
+                aria-label="anterior"
+                onClick={prevTestimonial}
+              >
+                <AiOutlineLeft />
+              </button>
+              <button
+                type="button"
+                className="testimonials__btn"
+                aria-label="próximo"
+                onClick={nextTestimonial}
+              >
+                <AiOutlineRight />
+              </button>
+            </div>
           </div>
-          <blockquote>
-            <p className="testimonial__quote">{`"${testimonials[index].quote}"`}</p>
-          </blockquote>
-          <h5>{testimonials[index].name}</h5>
-          <small className="testimonial__title">
-            {testimonials[index].occupation}
-          </small>
-        </Card>
-        <div className="testimonials__btn-container">
-          <button
-            type="button"
-            className="testimonials__btn"
-            aria-label="anterior"
-            onClick={prevTestimonial}
-          >
-            <AiOutlineLeft />
-          </button>
-          <button
-            type="button"
-            className="testimonials__btn"
-            aria-label="próximo"
-            onClick={nextTestimonial}
-          >
-            <AiOutlineRight />
-          </button>
-        </div>
-      </div>
-    </section>
+        </section>
+      )}
+    </>
   );
 };
 

@@ -8,15 +8,13 @@ import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import "./team.css";
 
 const Team = () => {
-  const [teachers, setTeachers] = useState();
+  const [teachers, setTeachers] = useState([]);
 
   useEffect(() => {
     fetch("/api/teachers.json")
       .then((response) => response.json())
       .then((data) => setTeachers(data));
   }, []);
-
-  if (teachers === undefined) return null;
 
   return (
     <div className="master_wrapper">

@@ -5,15 +5,13 @@ import Card from "../../components/Cards/Card";
 import "./offers.css";
 
 const Offers = () => {
-  const [offers, setOffers] = useState();
+  const [offers, setOffers] = useState([]);
 
   useEffect(() => {
     fetch("/api/features.json")
       .then((response) => response.json())
       .then((data) => setOffers(data));
   }, []);
-
-  if (offers === undefined) return null;
 
   return (
     <div className="master_wrapper">

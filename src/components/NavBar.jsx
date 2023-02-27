@@ -6,7 +6,7 @@ import "./navbar.css";
 import Head from "./Head";
 
 const NavBar = () => {
-  const [links, setLinks] = useState();
+  const [links, setLinks] = useState([]);
 
   useEffect(() => {
     fetch("/api/links.json")
@@ -17,8 +17,6 @@ const NavBar = () => {
   const [toggle, setToggle] = useState(false);
 
   const toggler = () => setToggle((state) => !state);
-
-  if (links === undefined) return null;
 
   return (
     <div className="fixed">
