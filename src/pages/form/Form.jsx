@@ -102,7 +102,7 @@ const Form = () => {
         desastre.
       </Header>
       <div className="form-subtitle">
-        <h2>Informação Do Aluno</h2>
+        <h3>Informação Do Aluno</h3>
       </div>
       <div className="container form__container">
         <div className="form__left">
@@ -122,7 +122,7 @@ const Form = () => {
                   value={formData.name}
                   onChange={handleChange}
                 />
-                <p>{formErrors.name}</p>
+                <p className="form-error">{formErrors.name}</p>
               </div>
               <div className="form-box ">
                 <label>Email</label>
@@ -133,7 +133,7 @@ const Form = () => {
                   value={formData.email}
                   onChange={handleChange}
                 />
-                <p>{formErrors.email}</p>
+                <p className="form-error">{formErrors.email}</p>
               </div>
               <div className="form-column">
                 <div className="form-box">
@@ -145,7 +145,7 @@ const Form = () => {
                     value={formData.phone}
                     onChange={handleChange}
                   />
-                  <p>{formErrors.phone}</p>
+                  <p className="form-error">{formErrors.phone}</p>
                 </div>
                 <div className="form-box">
                   <label>Data de Nascimento</label>
@@ -156,7 +156,7 @@ const Form = () => {
                     value={formData.birthday}
                     onChange={handleChange}
                   />
-                  <p>{formErrors.birthday}</p>
+                  <p className="form-error">{formErrors.birthday}</p>
                 </div>
               </div>
               <div className="form-column">
@@ -169,7 +169,7 @@ const Form = () => {
                     value={formData.idcard}
                     onChange={handleChange}
                   />
-                  <p>{formErrors.idcard}</p>
+                  <p className="form-error">{formErrors.idcard}</p>
                 </div>
                 <div className="form-box">
                   <label>NIF</label>
@@ -180,7 +180,7 @@ const Form = () => {
                     value={formData.nif}
                     onChange={handleChange}
                   />
-                  <p>{formErrors.nif}</p>
+                  <p className="form-error">{formErrors.nif}</p>
                 </div>
               </div>
 
@@ -193,7 +193,7 @@ const Form = () => {
                   value={formData.address}
                   onChange={handleChange}
                 />
-                <p>{formErrors.address}</p>
+                <p className="form-error">{formErrors.address}</p>
               </div>
               <div className="form-column">
                 <div className="form-box">
@@ -205,7 +205,7 @@ const Form = () => {
                     value={formData.city}
                     onChange={handleChange}
                   />
-                  <p>{formErrors.city}</p>
+                  <p className="form-error">{formErrors.city}</p>
                 </div>
                 <div className="form-box">
                   <label>Código Postal</label>
@@ -215,7 +215,7 @@ const Form = () => {
                     value={formData.code}
                     onChange={handleChange}
                   />
-                  <p>{formErrors.code}</p>
+                  <p className="form-error">{formErrors.code}</p>
                 </div>
               </div>
               {Object.keys(formErrors).length === 0 && isSubmit ? (

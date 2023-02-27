@@ -3,7 +3,7 @@
   margin-bottom: 5rem;
 }
 
-.form-subtitle h2 {
+.form-subtitle h3 {
   text-align: center;
   font-size: 3rem;
   font-weight: 800;
@@ -68,7 +68,7 @@ input {
   font-size: 1rem;
   color: #707070;
   margin-top: 8px;
-  border: 1px solid #250786;
+  border: none;
   border-radius: 6px;
   padding: 0 15px;
 }
@@ -93,10 +93,6 @@ input {
   border-radius: 6px;
 }
 
-.form-success p {
-  color: #f9f6ee !important;
-}
-
 .form button {
   height: 55px;
   width: 100%;
@@ -115,9 +111,9 @@ input {
   color: #313bac;
 }
 
-.form p {
-  color: #990202;
-  font-weight: 500;
+.form-error {
+  color: #990202 !important;
+  font-weight: 500 !important;
 }
 
 @media (max-width: 1024px) {
@@ -132,7 +128,7 @@ input {
     margin-bottom: -2rem;
   }
 
-  .form-subtitle h2 {
+  .form-subtitle h3 {
     font-size: 2.5rem;
   }
 
