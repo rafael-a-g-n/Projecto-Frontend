@@ -20,7 +20,7 @@ const Partnerships = () => {
       </Header>
       <section className="partners">
         <div className="partners-subtitle">
-          <h2>Os Nossos Parceiros</h2>
+          <h3>Os Nossos Parceiros</h3>
         </div>
         <div className="container partners__container">
           {partners.map(({ id, image, name, type, description, link }) => {
