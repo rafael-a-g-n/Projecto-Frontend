@@ -521,12 +521,12 @@ footer {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 380px) {
   .main__header-container {
     padding-top: 12rem;
   }
 
   .services__container {
-    padding-top: 5rem;
+    padding-top: 9rem;
   }
 }
