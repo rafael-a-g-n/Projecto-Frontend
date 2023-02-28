@@ -54,13 +54,13 @@ const Form = () => {
 
     if (!values.idcard) {
       errors.idcard = "Número de CC em falta!";
-    } else if (values.idcard.length < 8 || values.idcard.length > 8) {
+    } else if (values.idcard.length !== 8) {
       errors.idcard = "O número do CC tem de ter 8 dígitos";
     }
 
     if (!values.nif) {
       errors.nif = "Número de CC em falta!";
-    } else if (values.nif.length < 9 || values.nif.length > 9) {
+    } else if (values.nif.length !== 9) {
       errors.nif = "O número do CC tem de ter 9 dígitos";
     }
 
@@ -114,108 +114,135 @@ const Form = () => {
           <Card className="form__form">
             <form onSubmit={handleSubmit} className="form">
               <div className="form-box">
-                <label>Nome</label>
+                <label htmlFor="name">Nome</label>
                 <input
+                  id="name"
                   type="text"
                   name="name"
-                  placeholder="Nome"
+                  placeholder="ex. José António Silva"
                   value={formData.name}
                   onChange={handleChange}
                 />
-                <p className="form-error">{formErrors.name}</p>
+                {formErrors.name && (
+                  <p className="form-error">{formErrors.name}</p>
+                )}
               </div>
               <div className="form-box ">
-                <label>Email</label>
+                <label htmlFor="email">Email</label>
                 <input
+                  id="email"
                   type="email"
                   name="email"
-                  placeholder="eMail"
+                  placeholder="ex. antonio@mail.pt"
                   value={formData.email}
                   onChange={handleChange}
                 />
-                <p className="form-error">{formErrors.email}</p>
+                {formErrors.email && (
+                  <p className="form-error">{formErrors.email}</p>
+                )}
               </div>
               <div className="form-column">
                 <div className="form-box">
-                  <label>Contacto</label>
+                  <label htmlFor="contact">Contacto</label>
                   <input
+                    id="contact"
                     type="number"
                     name="phone"
                     placeholder="Numero de contacto"
                     value={formData.phone}
                     onChange={handleChange}
                   />
-                  <p className="form-error">{formErrors.phone}</p>
+                  {formErrors.phone && (
+                    <p className="form-error">{formErrors.phone}</p>
+                  )}
                 </div>
                 <div className="form-box">
-                  <label>Data de Nascimento</label>
+                  <label htmlFor="birthday">Data de Nascimento</label>
                   <input
+                    id="birthday"
                     type="date"
                     name="birthday"
                     placeholder="Data de nascimento"
                     value={formData.birthday}
                     onChange={handleChange}
                   />
-                  <p className="form-error">{formErrors.birthday}</p>
+                  {formErrors.birthday && (
+                    <p className="form-error">{formErrors.birthday}</p>
+                  )}
                 </div>
               </div>
               <div className="form-column">
                 <div className="form-box">
-                  <label>Cartão de cidadão</label>
+                  <label htmlFor="cc">Cartão de cidadão</label>
                   <input
+                    id="cc"
                     type="number"
                     name="idcard"
                     placeholder="Número de CC"
                     value={formData.idcard}
                     onChange={handleChange}
                   />
-                  <p className="form-error">{formErrors.idcard}</p>
+                  {formErrors.idcard && (
+                    <p className="form-error">{formErrors.idcard}</p>
+                  )}
                 </div>
                 <div className="form-box">
-                  <label>NIF</label>
+                  <label htmlFor="nif">NIF</label>
                   <input
+                    id="nif"
                     type="number"
                     name="nif"
-                    placeholder="NIF"
+                    placeholder="Número Id. Fiscal"
                     value={formData.nif}
                     onChange={handleChange}
                   />
-                  <p className="form-error">{formErrors.nif}</p>
+                  {formErrors.nif && (
+                    <p className="form-error">{formErrors.nif}</p>
+                  )}
                 </div>
               </div>
 
               <div className="form-box">
-                <label>Morada</label>
+                <label htmlFor="address">Morada</label>
                 <input
+                  id="address"
                   type="text"
                   name="address"
-                  placeholder="Morada"
+                  placeholder="Endereço postal"
                   value={formData.address}
                   onChange={handleChange}
                 />
-                <p className="form-error">{formErrors.address}</p>
+                {formErrors.address && (
+                  <p className="form-error">{formErrors.address}</p>
+                )}
               </div>
               <div className="form-column">
                 <div className="form-box">
-                  <label>Localidade</label>
+                  <label htmlFor="city">Localidade</label>
                   <input
+                    id="city"
                     type="text"
                     name="city"
-                    placeholder="Localidade"
+                    placeholder="Cidade"
                     value={formData.city}
                     onChange={handleChange}
                   />
-                  <p className="form-error">{formErrors.city}</p>
+                  {formErrors.city && (
+                    <p className="form-error">{formErrors.city}</p>
+                  )}
                 </div>
                 <div className="form-box">
-                  <label>Código Postal</label>
+                  <label htmlFor="code">Código Postal</label>
                   <input
+                    id="code"
                     name="code"
                     placeholder="ex. 1750-240"
                     value={formData.code}
                     onChange={handleChange}
                   />
-                  <p className="form-error">{formErrors.code}</p>
+                  {formErrors.code && (
+                    <p className="form-error">{formErrors.code}</p>
+                  )}
                 </div>
               </div>
               {Object.keys(formErrors).length === 0 && isSubmit ? (
